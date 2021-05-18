@@ -1,0 +1,101 @@
+html{
+  background-color: #FFDAB9
+}
+
+heading{
+  width: 500px;
+  margin: 50px;
+  padding: 50px;
+  float: center;
+}
+
+h1{
+  text-align: center;
+  font-family: "roboto";
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p{
+  font-family: roboto;
+  font-weight: bold;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div.form{
+  width:600px;
+  margin: auto;
+  padding: 40px;
+  background-color: white;
+  font-family: roboto
+}
+div.calign{
+  text-align:center;
+  padding: 50px
+}
+div.calign2{
+  text-align:center;
+  padding: 20px
+}
+.dropdownquestion{
+  font-size: 20px;
+  padding: 10px 50px 10px 50px;
+}
+
+.button{
+  background-color: rgb(69, 111, 226);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-weight:bold;
+  cursor: pointer;
+}
+
+.button:hover {background-color: blue}
+
+a:link {
+  color: blue;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer{
+  color: grey;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-family: roboto;
+}
