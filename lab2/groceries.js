@@ -80,11 +80,11 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restriction1, restriction2, restriction3) {
+function restrictListProducts(prods, lactoseRestrict, nutRestrict, organicRestrict) {
 	let product_names = [];
   prods.sort(function(x,y){return x.price - y.price})
 	for (let i=0; i<prods.length; i+=1) {
-		if(!(restriction1 && !prods[i].lactoseFree) && !(restriction2 && !prods[i].nutFree) && !(restriction3 && !prods[i].organic)){
+		if(!(lactoseRestrict && !prods[i].lactoseFree) && !(nutRestrict && !prods[i].nutFree) && !(organicRestrict && !prods[i].organic)){
 			product_names.push(prods[i].name + " @ $" +prods[i].price);
 		}
 	}
