@@ -1,0 +1,21 @@
+h1{
+  padding:10px;
+}
+.img{
+  float: center;
+  margin: auto;
+}
+p1{
+  font-weight: 650;
+  font-size: 18px
+}
+div.healthform{
+  background-image:"illustration-physiotherapist-female-patient.jpg";
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    max-width: 100%;
+ }
