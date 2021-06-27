@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class = "container-lg">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1>My Physiotherapy Clinic</h1>
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navigation</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+  </div>
+</nav><br>
+<div class="container">
+  <div class="row">
+    <div class="span4"></div>
+    <div class="span4"><img class="center-block" src="images/illustration-physiotherapist-female-patient.jpg" /></div>
+    <div class="span4"></div>
+  </div><br>
+</div>
+
+    <form class="row g-3 needs-validation" novalidate>
+    <p1>Schedule an Appointment Below</p1>
+    <select class="form-select" id="validationCustom06" required>
+      <option selected disable value="">Select a Service</option>
+      <option value="chiro">Chiropractor</option>
+      <option value="massage">Massage Therapy</option>
+      <option value="surgery">Surgery</option>
+      <option value="muscleRehab">Muscle Rehabillitation</option>
+      <option value="nerveRehab">Nerve Rehabillitation</option>
+      <option value="prevCare">Preventive Care</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid Service.
+    </div><br>
+
+    <div class="form-check form-switch">
+       <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+       <label class="form-check-label" for="flexSwitchCheckDefault">Have you made an appointment with us before?</label>
+</div><br>
+
+<p>Select the specialist you would like:</p>
+<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+<label class="btn btn-secondary" for="option1">Dr. Jane</label>
+<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
+<label class="btn btn-secondary" for="option2">Dr. Smith</label>
+<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" checked>
+<label class="btn btn-secondary" for="option3">Dr. John</label>
+
+<label for="birthdaytime">Enter a time appropriate for you (date and time):</label>
+<input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+<div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Province</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option value=alberta>Alberta</option>
+      <option value=bC>British Columbia</option>
+      <option value=manitoba>Manitoba</option>
+      <option value=newBruns>New Brunswick</option>
+      <option value=newFound>Newfoundland and Labrador</option>
+      <option value=novaScotia>Nova Scotia</option>
+      <option value=ontario>Ontario</option>
+      <option value=pEi>Prince Edward Island</option>
+      <option value=quebec>Quebec</option>
+      <option value=sask>Saskatchewan</option>
+      <option value=north>Northwest Territories</option>
+      <option value=nunavut>Nunavut</option>
+      <option value=yukon>Yukon</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Postal code</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+<div class="padding">
+    <div class="row">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="col-sm-8 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6"> <span>CREDIT/DEBIT CARD PAYMENT</span> </div>
+                            <div class="col-md-6 text-right" style="margin-top: -5px;"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="height: 350px">
+                        <div class="form-group"> <label for="cc-number" class="control-label">CARD NUMBER</label> <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required> </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="cc-exp" class="control-label">CARD EXPIRY</label> <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••" required> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="cc-cvc" class="control-label">CARD CVC</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="••••" required> </div>
+                            </div>
+                        </div>
+                        <div class="form-group"> <label for="numeric" class="control-label">CARD HOLDER NAME</label> <input type="text" class="input-lg form-control"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+
+ <div class="col-12">
+    <button class="btn btn-primary" type ="submit" onclick="myFunction()">Book Appointment</button>
+  </div>
+
+<div id="snackbar">Appointment Confirmed, thank you!</div>
+
+</form><br>
+<h1>Meet the Physicians!</h1>
+<div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Dr. Jane, Our Head Specialist</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Dr. Smith, Our Head Surgeon</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Dr. John, Our Rehab Specialist</p>
+            </div>
+        </div>
+    </div>
+      </div><br>
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>My Physiotherapy Clinic
+          </h6>
+          <p>
+            We provide a vareity of services that will help get your physio back on track.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Services
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Rehabillitation</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Massage</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Surgery</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Chiropractor</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Preventive Care</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Ottawa, ON K0N 5Z5, CA</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            MyClinic@physiotherapy.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 (555) 555-5555</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">SK</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css"/>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  
+</script>
+  </body>
+</html>
